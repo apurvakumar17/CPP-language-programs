@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    vector<int> marks = {8, 7};
+    vector<int> marks = {8, 7, 9};
     for (int i: marks) {
         cout << i;
     }
@@ -11,6 +11,8 @@ int main() {
     cout << marks.back() << endl;
     cout << marks.front() << endl;
     marks.push_back(10);
+    cout << marks.back() << endl;
+    marks.emplace_back(12);
     cout << marks.back() << endl;
     cout << marks.size() << endl;
     marks.back() = 11;
@@ -21,5 +23,5 @@ int main() {
         marks.pop_back();
     }
     cout << marks.size() << endl;
-    
+    return 0;
 }
